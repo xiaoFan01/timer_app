@@ -1,0 +1,31 @@
+.container{
+  background: whitesmoke
+}
+.title{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input1{
+  background:white;
+  border: 1rpx black solid;
+  padding-left: 20rpx
+}
+.time{
+  width: 100%;
+  font-size: 300%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.next-reset{
+  display: flex;
+  flex-direction: row
+}

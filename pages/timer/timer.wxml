@@ -1,0 +1,22 @@
+<view class="container" style='height:{{window.windowHeight}}px'>
+  <view class='title'>
+    <view>请输入标题：</view>
+    <input placeholder='事件名' bindinput='title' value='{{name}}' class='input1' style='width:{{window.windowWidth*0.4}}px;border-radius: 3px'></input>
+  </view>
+  <view style='height:{{window.windowHeight*0.3}}px;padding-top:{{window.windowHeight*0.2}}px'>
+    <text class='time'>{{formatTime1}}</text>
+  </view>
+  <view hidden='{{start}}' style='height:{{window.windowHeight*0.2}}px'>
+    <button style='height:{{window.windowHeight*0.2}}px;width:{{window.windowHeight*0.2}}px;font-size: 150%;' class='btn' type='primary' bindtap='first'>开始</button>
+  </view>
+  <view hidden='{{stop}}' style='height:{{window.windowHeight*0.2}}px'>
+    <button style='height:{{window.windowHeight*0.2}}px;width:{{window.windowHeight*0.2}}px;font-size: 150%;' class='btn' type='primary' bindtap='endSetInter'>结束</button>
+  </view>
+  <view hidden='{{save}}' style='height:{{window.windowHeight*0.2}}px'>
+    <button style='height:{{window.windowHeight*0.2}}px;width:{{window.windowHeight*0.2}}px;font-size: 150%;' class='btn' type='primary' bindtap='save'>保存</button>
+    <!-- <view class='next-reset'>
+      <button type='primary' bindtap='startSetInter'>继续</button>
+      <button type='primary' bindtap='reset'>重置</button>
+    </view> -->
+  </view>
+</view>

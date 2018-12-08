@@ -1,0 +1,17 @@
+.photo-bg{
+  background-color: aqua
+}
+.item{
+  height: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  padding-left: 12%;
+  padding-top: 20px
+}
+.login-btn{
+  margin-top: 20px;
+  margin-left: 10%;
+  width: 80%;
+}

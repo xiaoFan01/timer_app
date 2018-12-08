@@ -1,0 +1,18 @@
+<view>
+  <view class='photo-bg' style='height: {{window.windowHeight*0.618}}px;'>
+    <view style='padding-left:{{window.windowWidth*0.191}}px'>
+      <image style='width: {{window.windowWidth*0.618}}px;height: {{window.windowWidth*0.618}}px;padding-top: {{window.windowHeight*0.309-window.windowWidth*0.309}}px;' src='/static/img/time.png'></image>
+    </view>
+  </view>
+  <view style='height:{{window.windowHeight*0.382-40}}px;margin-top:20px'>
+    <view class='item'>
+      <view style='width:20%'>账号：</view>
+      <view><input style='width:{{window.windowWidth*0.4}}' placeholder='账号/编号' bindinput='number'></input></view>
+    </view>
+    <view class='item'>
+      <view style='width:20%'>密码：</view>
+      <view><input style='width:{{window.windowWidth*0.4}}' password='true' placeholder='密码' bindinput='password'></input></view>
+    </view>
+    <view class='login-btn'><button bindtap='commit'>登录</button></view>
+  </view>
+</view>

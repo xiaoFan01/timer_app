@@ -1,0 +1,28 @@
+<view class='bg'>
+  <view class='total'>
+    <view class='gs'>
+      共计时{{total.TotalNum}}次，总用时:{{total.H}}小时{{total.M}}分钟{{total.S}}秒
+    </view>
+  </view>
+  <view wx:if="{{notsave}}">
+    <view style='padding-top:10px;padding-left:10px'>未保存记录</view>
+    <view class='time1' wx:for="{{notsave}}" wx:key="*this">
+      <view>{{item.name}}</view>
+      <view>计时：{{item.tt}}</view>
+      <view class='time-size'>{{item.st}}--{{item.et}}</view>
+    </view>
+    <view class='btn'>
+      <button style='width:50%' type='primary' bindtap='tosave'>保存</button>
+      <button type='warn' style='width:50%' bindtap='delet'>取消</button>
+    </view>
+  </view>
+  <view wx:if="{{moment}}">
+    <view style='padding-top:10px;padding-left:10px'>历史记录</view>
+    <view wx:for="{{moment}}" wx:key="*this" class='time1'>
+      <view>{{item.title}}</view>
+      <view>计时：{{item.tatalTime}}</view>
+      <view class='time-size'>{{item.startTime}}--{{item.endTime}}</view>
+    </view>
+  </view>
+  <view wx:else>暂无记录</view>
+</view>

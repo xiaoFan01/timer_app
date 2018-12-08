@@ -1,0 +1,30 @@
+.bg{
+  background: whitesmoke
+}
+.total{
+  height: 100rpx;
+  width: 100%;
+  background: violet;
+  padding-top:35rpx; 
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: center
+}
+.time-size{
+  font-size: smaller;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+}
+.time1{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin-top: 10px;
+  padding-left: 20px;
+  border: #6e7477 3rpx solid; 
+  background: white;
+  border-radius: 8px
+}

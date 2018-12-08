@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/timer/timer",
+    "pages/records/records"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [{
+      "pagePath": "pages/timer/timer",
+      "text": "计时器",
+      "iconPath": "/static/img/001.png",
+      "selectedIconPath": "/static/img/002.png"
+    },
+    {
+      "pagePath": "pages/records/records",
+      "text": "记录",
+      "iconPath": "/static/img/005.png",
+      "selectedIconPath": "/static/img/006.png"
+    }]
+  }
+}
